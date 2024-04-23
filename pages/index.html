@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/images/main/logo1.png" type="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+     <!-- Add Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Restaurant</title>
+    <link rel="stylesheet" href="/pages/footer.css">
+    <link rel="stylesheet" href="/pages/navbar.css">
+    <link rel="stylesheet" href="./book.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <div class="header">
+
+            <!--Sign up/Sign in Form-->
+            <div class="sign">
+                <div class="sign-box">
+                    <div class="bar">
+                        <i class="fa-solid fa-xmark" id="x-sign-mb"></i>
+                    </div>
+                    <!-- signup form -->
+                    <div class="signup">
+                        <h3>Sign Up</h3>
+                        <form action="#">
+                            <label for="fullname">Enter Full Name</label></br>
+                            <input type="text" placeholder="Full Name" name="fullname" id=""></br>
+                            <label for="email">Enter E-mail</label></br>
+                            <input type="email" placeholder="E-mail" name="email" id=""></br>
+                            <label for="password">Create Password</label></br>
+                            <input type="password" placeholder="Password" name="password" id=""></br>
+                            <label for="copassword">Confirm Password</label></br>
+                            <input type="password" placeholder="Confirm Password" name="copassword" id=""></br>
+                            <input type="submit" value="Sign Up">
+                            <p id="to-signin">Already have an account? Sign In</p>
+                        </form>
+                    </div>
+                    <!-- sign in form -->
+                    <div class="signin">
+                        <h3>Sign In</h3>
+                        <form action="#">
+                            <label for="email2">Enter Your E-mail:</label>
+                            <input type="email" placeholder="E-mail" name="email2" id="">
+                            <label for="password2">Enter Password: </label>
+                            <input type="password" placeholder="Password" name="password2" id="">
+                            <input type="submit" value="Sign In">
+                        </form>
+                        <p>Forgot Password?</p>
+                        <p id="to-signup">Don't have an account? Sign Up</p>
+                    </div>
+                </div>
+            </div>
+            <!--Hidden Header for Mobile/Tablet (start)-->
+            <div class="headerbar">
+                <div class="account">
+                    <ul>
+                        <a href="">
+                            <li>
+                                <i class="fa-solid fa-house-chimney"></i>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i>
+                            </li>
+                        </a>
+                        <div class="search" id="searchinput1">
+                            <input type="search">
+                            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                        </div>
+                        
+                        <a href="">
+                            <li>
+                                <i class="fa-solid fa-user" id="user-mb"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="nav">
+                    <ul>
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+
+                        <a href="">
+                            <li>About</li>
+                        </a>
+
+                        <a href="">
+                            <li>Food Menu</li>
+                        </a>
+
+                        <a href="">
+                            <li>Book Table</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="logo">
+                <img src="/images/main/logo1.png" alt="">
+            </div>
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="hdcross"></i>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <a href="/pages/index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="/pages/About.html">
+                        <li>About</li>
+                    </a>
+                    <a href="/pages/menu.html">
+                        <li>Food Menu</li>
+                    </a>
+                    <a href="/pages/book.html">
+                        <li>Book Table</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="account">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
+                        </li>
+                    </a>
+
+                    <div class="search" id="searchinput2">
+                        <input type="search" placeholder="Search here">
+                        <i class="fa-solid fa-magnifying-glass srchicon"></i> 
+                    </div>
+                    <a href="#">
+                        <li>
+                            <i class="fa-solid fa-user" id="user-lap"></i>
+                        </li>
+                    </a>
+
+                </ul>
+             </div> 
+        </div>
+    </header>
+
+
+    <!--Home Page-->
+    <div class="home">
+        <!--Section 1 (start)-->
+        <div class="main_slide">
+            <div>
+                <h1>Enjoy <span> Delicious Food </span> in Your Healthy Life</h1>
+                <p>Experience the pleasure of savoring our delectable dishes made from the finest ingredients. Our culinary experts craft each dish with care, ensuring a delightful dining experience that nourishes both body and soul.</p>
+                <button class="red_btn">Visit Now <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <div>
+                <div class="banner-img-wp">
+                    <div class="banner-img" style="background-image: url(/images/main/main-b.jpg);">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Section 2-->
+
+        <div class="heading">Our <span>Special Offers</span></div>
+   
+        <div class="main_slide2">
+            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="/images/slideBanners/banner1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slideBanners/banner2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slideBanners/banner3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/slideBanners/banner4.jpg" alt=""></div>
+                  
+            
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+
+       
+
+        <!--Section 3-->
+        <div class="main_slide2">
+            <div class="foodimg">
+                <img src="/images/dish/4.png" alt="">
+            </div>
+            <div class="question">
+                <div>
+                    <h2>Why People <span>Choose Us?</span></h2>
+                </div>
+                <div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="/images/dish/plate1.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Wide Variety of Choices</h4>
+                            <p>Explore our extensive menu offering a wide range of delicious options, from appetizers to desserts. Whether you're craving something savory or sweet, we have something for everyone.</p>
+                        </div>
+                    </div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="/images/dish/plate3.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Fresh and High-Quality Ingredients</h4>
+                            <p>We take pride in using only the freshest and highest quality ingredients in our dishes. Our chefs carefully select each ingredient to ensure every bite is bursting with flavor and freshness.</p>
+                        </div>
+                    </div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="/images/dish/3.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Exceptional Service</h4>
+                            <p>Experience exceptional service from the moment you walk through our doors. Our friendly staff is dedicated to providing you with a memorable dining experience, ensuring your satisfaction every step of the way</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--Section 4 (start)-->
+
+        <div class="main_slide3">
+            <div class="fav-head">
+                <h3>Our <span>Popular Food </span>Items</h3>
+                <p>Discover the flavors that have captured the hearts of our guests. Indulge in our signature dishes expertly crafted to tantalize your taste buds and leave you craving for more!</p>
+            </div>
+           
+            <div class="fav-food">
+                <div class="item">
+                    <div>
+                        <img src="/images/dish/promo-3.png" alt="Food item">
+                    </div>
+                    <h3 class="yell">Lemon Herb Roast Chicken</h3>
+                    <p>Tender roasted chicken marinated served with roasted potatoes and steamed green beans.</p>
+                    <p class="fav-price">Rs.399/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="/images/dish/promo-1.png" alt="Food item">
+                    </div>
+                    <h3 class="yell">Fish Tacos</h3>
+                    <p>Crispy beer-battered fish served in warm corn tortillas, topped with shredded cabbage, and a creamy chipotle mayo.</p>
+                    <p class="fav-price">Rs.499/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="/images/dish/6.png" alt="Food item">
+                    </div>
+                    <h3 class="yell">Vegetarian Pad Thai</h3>
+                    <p>Bean sprouts, peanuts, and a tangy tamarind sauce, garnished with cilantro and lime wedges.</p>
+                    <p class="fav-price">Rs.259/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="/images/dish/promo-2.png" alt="Food item">
+                    </div>
+                    <h3 class="yell">Shrimp Scampi</h3>
+                    <p>Succulent shrimp sautéed in garlic-infused butter, white wine, and fresh herbs, served overlinguine pasta.</p>
+                    <p class="fav-price">Rs.429/-</p>
+                </div>
+            </div>
+            <!-- design div  -->
+            <div class="dsgn"></div>
+        </div>
+        <!--Section 4 (end)-->
+
+        
+
+    </div>
+
+
+
+    <!--Gallary-->
+
+    <div class="gallary" id="Gallary">
+        <h1>Our<span>Gallary</span></h1>
+
+        <div id="order-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h2>Place Your Order</h2>
+                <label for="address">Enter Delivery Address:</label>
+                <input type="text" id="address" placeholder="Enter Address"><br>
+                <label for="address">Enter Quantity:</label>
+                <input type="number" id="quantity" placeholder="Quantity">
+                <p>Total Price: <span id="total-price">$0</span></p>
+                <button id="pay-btn" class="pay_btn">Pay</button>
+            </div>
+        </div>
+
+        <div id="success-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h2>Order Placed Successfully!</h2>
+            </div>
+        </div>
+
+        <div class="gallary_image_box">
+            <div class="gallary_image menu-item">
+                <img src="/images/gallary/gallary_1.jpg">
+
+                <h3>Sandwich</h3>
+                <p>
+                    Price: $30
+                </p>
+                
+                <button class="order-btn gallary_btn" data-item="item1">Order Now</button>
+            </div>
+
+            <div class="gallary_image menu-item">
+                <img src="/images/gallary/gallary_2.jpg">
+
+                <h3>Cup Cake with Cream</h3>
+                <p>
+                    Price: $50
+                </p>
+               
+                <button class="order-btn gallary_btn" data-item="item1">Order Now</button>
+                <!-- <a href="#Gallary" class="gallary_btn" >Order Now</a> -->
+            </div>
+
+            <div class="gallary_image">
+                <img src="/images/gallary/gallary_4.jpg">
+
+                <h3>Chocolate bread</h3>
+                <p>
+                    Price: $40
+                </p>
+               
+                <a href="#Gallary" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="/images/gallary/ice_cream.jpg">
+
+                <h3>Ice Cream</h3>
+                <p>
+                    Price: $55
+                </p>
+                
+                <a href="#Gallary" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="/images/gallary/gallary_6.jpg">
+
+                <h3>Chocolate Lava Cake</h3>
+                <p>
+                    Price: $70 
+                </p>
+                
+                <a href="#Gallary" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="/images/gallary/sandwich.jpg">
+
+                <h3>Caesar Wrap</h3>
+                <p>
+                    Price: $40
+                </p>
+               
+                <a href="#Gallary" class="gallary_btn">Order Now</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="Mcontainer"> 
+        <div class="inner_container mySwiper">
+            <h2>Organize Your Events in Our Restaurant</h2>
+
+            <div class="swiper-wrapper">
+                <div class="slide1 swiper-slide">
+                    
+                    <div class="imgbox">
+                        <img src="/images/events/event-birthday.jpg" alt="">
+                    </div>
+                    <div class="contents">
+                        <h3>Birthday Celebration</h3>
+                        <p>
+                            Hosting a Birthday Party at our restaurant is a great way
+                            to bring a large group together for the ultimate
+                            celebration. You can meet with our event manager to plan
+                            all the celebration details:
+                        </p>
+                        <ul>
+                            <li><i class="fa-regular fa-circle-check"></i> Customizable party packages to suit your preferences.</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Personalized birthday decorations and themes available.</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Delicious catering options with a variety of menu choices.</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Exciting entertainment options such as music, games, or activities.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="slide1 swiper-slide">
+                    
+                    <div class="imgbox">
+                        <img src="/images/events/event-baby.jpg" alt="">
+                    </div>
+                    <div class="contents">
+                        <h3>Corporate Event</h3>
+                        <p>Host your next corporate event at our restaurant and impress your client our versatile your needs. ensure every detail is taken care of, from audiovisual equipment to catering services. Let us help you plan a successful and productive event that leaves a lasting impression!
+                        </p>
+                        <ul>
+                            <li><i class="fa-regular fa-circle-check"></i> Tailored event  for corporate meetings, conferences events.</li>
+                            <li><i class="fa-regular fa-circle-check"></i> State audiovisual equipment and presentation amenities.</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Customized seating catering including breakfast, lunch</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Flexible seating accommodate various group sizes.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class=" slide1 swiper-slide">
+                    
+                    <div class="imgbox">
+                        <img src="/images/events/event-holiday.jpg" alt="">
+                    </div>
+                    <div class="contents">
+                        <h3> Holiday Party</h3>
+                        <p>Get into the holiday spirit by hosting your party at our restaurant! Whether it's a festive office gathering or a family reunion, our venue provides the ideal setting for spreading holiday cheer. Let us help you create a magical event with delicious food, festive decor, and impeccable service.
+                        </p>
+                        <ul>
+                            <li><i class="fa-regular fa-circle-check"></i> Festive atmosphere with seasonal decorations</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Special holiday menu featuring traditional favorites </li>
+                            <li><i class="fa-regular fa-circle-check"></i> Options for customized cocktails or beverage packages.</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Flexible event spaces to accommodate small crowds.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <!-- <div class="swiper-pagination"></div>    -->
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    
+    
+
+    <!-- Company -->
+   
+    <div class="main_slide6">
+        <h1>Trusted by <span>70+ companies</span></h1>
+        <div class="company_container">
+            <img src="/images/brands/b1.png" alt="">
+            <img src="/images/brands/b2.png" alt="">
+            <img src="/images/brands/b3.png" alt="">
+            <img src="/images/brands/b4.png" alt="">
+            <img src="/images/brands/b5.png" alt="">
+        </div>
+    </div>
+
+    <!-- review -->
+    <div class="review" id="Review">
+            <h1>Customer<span>Review</span></h1>
+
+            <div class="review_box">
+                <div class="review_card">
+
+                    <div class="review_profile">
+                        <img src="/images/reviewer/review_3.png">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">Nikita Mandal</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            Exquisite flavors danced on my palate at this charming restaurant. From the ambiance to the meticulously crafted dishes, every aspect exuded excellence. Impeccable service complemented the culinary journey, making it a dining experience to remember.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="review_card">
+
+                    <div class="review_profile">
+                        <img src="/images/reviewer/review_4.png">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">Kunal Sah</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            From the moment I stepped inside, I knew I was in for a treat. The restaurant's ambiance exuded sophistication, setting the stage for an unforgettable culinary journey. Every dish surpassed my expectations, leaving me eager to revisit this culinary gem.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="review_card">
+
+                    <div class="review_profile">
+                        <img src="/images/reviewer/t3.jpg">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">Rob Stark</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            An oasis of gastronomic delight, restaurant exceeded my expectations. Each dish was masterpiece, perfectly balancing flavors and textures. The warm hospitality added to the memorable evening, must-visit destination for food enthusiasts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="review_card">
+
+                    <div class="review_profile">
+                        <img src="/images/reviewer/t4.jpg">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">Kamal Sah</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            Savoring every bite, I found the restaurant's cuisine to be a delightful fusion of creativity and tradition. The inviting atmosphere and attentive staff elevated the dining experience, leaving me eager to return for more culinary adventures.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </div>
+
+    <!-- team -->
+    <div class="main_slide5_heading">
+        <h1>Our <span>Team</span></h1>
+        <div class="main_slide5">
+                        
+                <div class="team">
+                    <div class="team_box">
+                        <div class="profile">
+                            <img src="/images/chef/c1.jpg" alt="">
+            
+                            <div class="info">
+                                <h2 class="name">Chef Kunal Sah</h2>
+                                <p class="bio">
+                                    Bringing creativity and passion to every dish with over a decade of experience.
+                                </p>
+            
+                                <div class="team_icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team_box">
+                        <div class="profile">
+                            <img src="/images/chef/c8.jpg" alt="">
+            
+                            <div class="info">
+                                <h2 class="name">Chef Little Finger</h2>
+                                <p class="bio">Known for attention to detail and commitment to flavor.</p>
+            
+                                <div class="team_icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team_box">
+                        <div class="profile">
+                            <img src="/images/chef/c6.jpg" alt="">
+            
+                            <div class="info">
+                                <h2 class="name">Chef Jon Snow</h2>
+                                <p class="bio"> pioneers fusion cuisine with locally sourced her inventive dishes.</p>
+            
+                                <div class="team_icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team_box">
+                        <div class="profile">
+                            <img src="/images/chef/c4.jpg" alt="">
+            
+                            <div class="info">
+                                <h2 class="name">Chef Brandon Stark</h2>
+                                <p class="bio">Known for attention to detail and commitment to flavor.</p>
+            
+                                <div class="team_icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_main">
+
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p>Delhi</p>
+                    <p>Mumbai</p>
+                    <p>Kolkata</p>
+                    <p>Jalandhar</p>
+                    <p>Manali</p>
+                    </div>
+
+                <div class="footer_tag">
+                    <h2>Quick</h2>
+                    <p style="color: red;">Home</p>
+                    <p>About</p>
+                    <p>Menu</p>
+                    <p>Gallary</p>
+                    <p>Book Table</p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Contact</h2>
+                    <p>+91 9031704321</p>
+                    <p>+977 9807330770</p>
+                    <p>kunalsah534@gmail.com</p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Our Service</h2>
+                    <p>Fast Delivery</p>
+                    <p>Easy Payments</p>
+                    <p>24 X 7</p>
+                </div>
+                
+                <div class="footer_tag">
+                    <h2>Follows</h2>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+        </div>
+        <p class="end">Design by <span><i class="fa-solid fa-face-grin"></i> Kunal Sah</span></p>
+    </footer>
+
+
+
+    <script src="/pages/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 140,
+        //   centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          loop:true,
+        });
+    
+    
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            const orderButtons = document.querySelectorAll('.order-btn');
+            const orderPopup = document.getElementById('order-popup');
+            const successPopup = document.getElementById('success-popup');
+            const payButton = document.getElementById('pay-btn');
+            const closeButton = document.querySelectorAll('.close-btn');
+            const quantityInput = document.getElementById('quantity');
+            const addressInput = document.getElementById('address');
+            const totalPriceSpan = document.getElementById('total-price');
+
+            orderButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    orderPopup.style.display = 'block';
+                    const itemPrice = parseFloat(button.parentElement.querySelector('p').textContent.replace('Price: $', ''));
+                    totalPriceSpan.textContent = `$${itemPrice * quantityInput.value}`;
+                });
+            });
+
+            quantityInput.addEventListener('input', () => {
+                const selectedItem = document.querySelector('.order-btn:focus');
+                const itemPrice = parseFloat(selectedItem.parentElement.querySelector('p').textContent.replace('Price: $', ''));
+                totalPriceSpan.textContent = `$${itemPrice * quantityInput.value}`;
+            });
+
+            payButton.addEventListener('click', () => {
+                const address = addressInput.value;
+                const quantity = quantityInput.value;
+                const totalPrice = totalPriceSpan.textContent;
+
+                // Send order details to server for processing and payment
+
+                // On successful order
+                orderPopup.style.display = 'none';
+                successPopup.style.display = 'block';
+
+                // Clear input fields
+                addressInput.value = '';
+                quantityInput.value = '';
+            });
+
+            // Close popups
+            closeButton.forEach(button => {
+                button.addEventListener('click', () => {
+                    orderPopup.style.display = 'none';
+                    successPopup.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
